@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交響曲</title>
+    <link rel="stylesheet" href="symphony.css">
+    <link rel="stylesheet" href="test_test.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <a href="file:///Users/itomitsutaka/Desktop/html_lesson/test.html">本ページへ</a>
+        </div>
+        <div class="header-right">
+          <a href="https://forms.gle/7jrcytAzvtTkdXWo6" target="_blank" rel="noopener noreferrer">新規曲登録</a>
+          <a href="https://forms.gle/14tKiBHDCPzQMpLd8" target="_blank" rel="noopener noreferrer">お問合せ</a>
+          <a href="https://orchestratokyouniversityofscience.wordpress.com/" target="_blank" rel="noopener noreferrer">管弦楽団公式サイト</a>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>交響曲</h1>
+        <p>このサイトは音楽愛好家のために作られたサイトです。</p>
+        <p>何か曲を聞きたいけど、どんな曲から聞けばいいか分からない。</p>
+        <p>交響曲に詳しくなくて何がおすすめなのか分からない。</p>
+        <p>協奏曲聞いてみたいけど、どれが有名なのか分からない。。</p>
+        <p>などの理由で音楽鑑賞に一歩を踏み出せない人、新たなジャンルの曲を聞いてみたい方々におすすめです。</p>
+      </div>
+    </div>
+    <div class="search">
+        <div class="search_area">
+            <script src="symphony.js"></script>
+            <form method="get" action="">
+
+                <input type="search" id="search" name="search" placeholder="作曲者検索">
+                      <!--曲種ジャンル-->
+                <select id="series" name="series">
+                    <option value="">曲種ジャンル</option>
+                    <option value="冷静">冷静</option>
+                    <option value="情緒">情緒</option>
+                    <option value="荘厳">荘厳</option>>
+                    <option value="熱血">熱血</option>
+                    <option value="優美">優美</option>
+                </select>
+                      <!--レベルジャンル-->
+                <select id="level" name="level">
+                    <option value="">レベルジャンル</option>
+                    <option value="初心者">初心者</option>
+                    <option value="経験者">経験者</option>
+                    <option value="玄人">玄人</option>
+                </select>
+                <input type="button" value="絞り込む" id="button"> <input type="button" value="すべて表示" id="button2">
+            </form>
+        </div>
+    
+        <div class="music_data">
+            <table id="data" border="0" cellspacing="0">
+                <thead>
+                    <tr><th class="maker">作曲者</th><th class="numbers">番号</th><th class="type">タイプ</th><th class="piece_level">レベル別</th><th class="youtube_links">youtubeリンク</th><th class="imslp_links">imslpリンク</th></tr>
+                </thead>
+                <!--冷静、情緒、荘厳、熱血、優美-->>
+                <tbody>
+                    <tr><td class="maker">チャイコフスキー</td><td class="numbers">0</td><td class="type">華やか</td><td class="piece_level">初心者</td><td class="youtube_links"><a href="https://youtu.be/vMPP8DkVhk8">https://youtu.be/vMPP8DkVhk8</a></td><td class="imslp_links"><a href="https://imslp.org/wiki/Violin_Concerto,_Op.35_(Tchaikovsky,_Pyotr)">imslp</a></td></tr>
+                    <tr><td>シベリウス</td><td>0</td><td>冷静・情熱</td><td>経験者</td><td><a href="https://youtu.be/0XdBDluOOUg">https://youtu.be/0XdBDluOOUg</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto,_Op.47_(Sibelius,_Jean)">imslp</a></td></tr>
+                    <tr><td>ブラームス</td><td>0</td><td>荘厳</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=v8im5hFlpUw&t=13s">https://www.youtube.com/watch?v=v8im5hFlpUw&t=13s</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto,_Op.77_(Brahms,_Johannes)">imslp</a></td></tr>
+                    <tr><td>ベートーベン</td><td>0</td><td>荘厳</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=jpX9zp9wKqA">https://youtu.be/v8im5hFlpUw</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_in_D_major,_Op.61_(Beethoven,_Ludwig_van)">imslp</a></td></tr>
+                    <tr><td>ショスタコービッチ</td><td>0</td><td>渋い</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=rsARRcrIs1k">https://www.youtube.com/watch?v=rsARRcrIs1k</a></td><td>imslpなし</td></tr>
+                    <tr><td>ブルッフ</td><td>1</td><td>華やか</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=KDJ6Wbzgy3E">https://www.youtube.com/watch?v=KDJ6Wbzgy3E</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1,_Op.26_(Bruch,_Max)">imslp</a></td></tr>
+                    <tr><td>メンデルスゾーン</td><td>0</td><td>華やか</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=78q-jbzk-Vg&t=1544s">https://www.youtube.com/watch?v=78q-jbzk-Vg&t=1544s</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto,_Op.64_(Mendelssohn,_Felix)">imslp</a></td></tr>
+                    <tr><td>バッハ</td><td>1</td><td>優美</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=Q3-5144TaYg">https://www.youtube.com/watch?v=Q3-5144TaYg</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_in_A_minor,_BWV_1041_(Bach,_Johann_Sebastian)">imslp</a></td></tr>
+                    <tr><td>バッハ</td><td>2</td><td>優美</td><td>中級者</td><td><a href="https://www.youtube.com/watch?v=DgfyryZJES4">https://www.youtube.com/watch?v=DgfyryZJES4</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_in_E_major%2C_BWV_1042_(Bach%2C_Johann_Sebastian)">imslp</a></td></tr>
+                    <tr><td>パガニーニ</td><td>1</td><td>壮大・華やか</td><td>経験者</td><td><a href="https://www.youtube.com/watch?v=NEuN6yGVj5s">https://www.youtube.com/watch?v=NEuN6yGVj5s</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1%2C_Op.6_(Paganini%2C_Niccol%C3%B2)">imslp</a></td></tr>
+                    <tr><td>パガニーニ</td><td>2</td><td>華麗</td><td>経験者</td><td><a href="https://www.youtube.com/watch?v=tLOciQwraZg&t=6s">https://www.youtube.com/watch?v=tLOciQwraZg&t=6s</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2,_Op.7_(Paganini,_Niccol%C3%B2)">imslp</a></td></tr>
+                    <tr><td>ヴィエニャフスキ</td><td>1</td><td>情緒</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=7a0xZuzJMEE">https://www.youtube.com/watch?v=7a0xZuzJMEE</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1%2C_Op.14_(Wieniawski%2C_Henri)">imslp</a></td></tr>
+                    <tr><td>ヴィエニャフスキ</td><td>2</td><td>熱血</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=zBDtOHgqic8">https://www.youtube.com/watch?v=zBDtOHgqic8</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2%2C_Op.22_(Wieniawski%2C_Henri)">imslp</a></td></tr>
+                    <tr><td>グラズノフ</td><td>0</td><td>荘厳</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=jq8oxIgyp8E">https://www.youtube.com/watch?v=jq8oxIgyp8E</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto,_Op.82_(Glazunov,_Aleksandr)">imslp</a></td></tr>
+                    <tr><td>サンサーンス</td><td>1</td><td>熱血</td><td>中級者</td><td><a href="https://www.youtube.com/watch?v=p8BMguZ05sU">https://www.youtube.com/watch?v=p8BMguZ05sU</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1,_Op.20_(Saint-Sa%C3%ABns,_Camille)">imslp</a></td></tr>
+                    <tr><td>サンサーンス</td><td>2</td><td>優美</td><td>中級者</td><td><a href="https://www.youtube.com/watch?v=UK-tM2_ipWw">https://www.youtube.com/watch?v=UK-tM2_ipWw</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2,_Op.58_(Saint-Sa%C3%ABns,_Camille)">imslp</a></td></tr>
+                    <tr><td>サンサーンス</td><td>3</td><td>荘厳</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=DZxwiABbock">https://www.youtube.com/watch?v=DZxwiABbock</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.3,_Op.61_(Saint-Sa%C3%ABns,_Camille)">imslp</a></td></tr>
+                    <tr><td>シマノフスキ</td><td>1</td><td>優美</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=vdDAcF7zwbQ">https://www.youtube.com/watch?v=vdDAcF7zwbQ</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1%2C_Op.35_(Szymanowski%2C_Karol)">imslp</a></td></tr>
+                    <tr><td>シマノフスキ</td><td>2</td><td>優美</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=vdDAcF7zwbQ">https://www.youtube.com/watch?v=vdDAcF7zwbQ</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2,_Op.61_(Szymanowski,_Karol)">imslp</a></td></tr>
+                    <tr><td>ドヴォルザーク</td><td>0</td><td>荘厳</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=iPBWJdwWnaA">https://www.youtube.com/watch?v=iPBWJdwWnaA</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto%2C_Op.53_(Dvo%C5%99%C3%A1k%2C_Anton%C3%ADn)">imslp</a></td></tr>
+                    <tr><td>ニールセン</td><td>0</td><td>華麗</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=lmnAgApw5Ak">https://www.youtube.com/watch?v=lmnAgApw5Ak</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto,_Op.33_(Nielsen,_Carl)">imslp</a></td></tr>
+                    <tr><td>ハチャトリアン</td><td>0</td><td>情緒</td><td>経験者</td><td><a href="https://www.youtube.com/watch?v=FuCU32qVrqE">https://www.youtube.com/watch?v=FuCU32qVrqE</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.19_in_D_minor_(Kreutzer,_Rodolphe)">imslp</a></td></tr>
+                    <tr><td>バルトーク</td><td>1</td><td>冷静</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=CLDn-F2Q4Gs">https://www.youtube.com/watch?v=CLDn-F2Q4Gs</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1,_Sz.36_(Bart%C3%B3k,_B%C3%A9la)">imslp</a></td></tr>
+                    <tr><td>バルトーク</td><td>2</td><td>熱血</td><td>経験者</td><td><a href="https://www.youtube.com/watch?v=IugWWLvXgNs">https://www.youtube.com/watch?v=IugWWLvXgNs</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2%2C_Sz.112_(Bart%C3%B3k%2C_B%C3%A9la)">imslp</a></td></tr>
+                    <tr><td>プロコフィエフ</td><td>1</td><td>優美</td><td>初心者</td><td><a href="https://www.youtube.com/watch?v=SyFQwiAqDS4">https://www.youtube.com/watch?v=SyFQwiAqDS4</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.1%2C_Op.19_(Prokofiev%2C_Sergey)">imslp</a></td></tr>
+                    <tr><td>プロコフィエフ</td><td>2</td><td>荘厳</td><td>中級者</td><td><a href="https://www.youtube.com/watch?v=oMKP3gwRJHI">https://www.youtube.com/watch?v=oMKP3gwRJHI</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_No.2,_Op.63_(Prokofiev,_Sergey)">imslp</a></td></tr>
+                    <tr><td>ベルク</td><td>0</td><td>情緒</td><td>玄人</td><td><a href="https://www.youtube.com/watch?v=nZW0LpaaAV4">https://www.youtube.com/watch?v=nZW0LpaaAV4</a></td><td><a href="https://imslp.org/wiki/Violin_Concerto_(Berg%2C_Alban)"></a>imslp</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+      <div class="footer_left">
+        <img src="MuDic.png">
+      </div>
+
+      <div class="footer_right">
+          <p>音楽図書館MuDic：作成者</p>
+          <p>伊東充高</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 2048px) {
+  
+}
+
+/* モバイル向けレイアウト */
+@media all and (max-width: 1284px) {
+
+}
+
